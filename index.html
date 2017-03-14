@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slideshow</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<h1>GIANTS</h1>
+	</header>
+	<section id="hero">
+		<div class="slideshow">
+			<a class="back" onclick="plusDivs(-1)"><</a>
+			<img class="slides" src="img/sb21.jpg">
+			<img class="slides" src="img/sb25.jpg">
+			<img class="slides" src="img/sb42.jpg">
+			<img class="slides" src="img/sb46.jpg">
+			<a class="forward" onclick="plusDivs(+1)">></a>
+			<h2>Giants Superbowl Champions through the years</h2>
+		</div>
+	</section>
+	<section id="gallery">
+		<a href="#simms">
+			<img src="img/simms.jpg">
+		</a>
+		<div id="simms">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<img src="img/simms.jpg">
+				<p>Superbowl 21 MVP Phil Simms</p>
+			</div>
+		</div>
+		<a href="#anderson">
+			<img src="img/anderson.jpg">
+		</a>
+		<div id="anderson">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<img src="img/anderson.jpg">
+				<p>Superbowl 25 MVP Ottis Anderson</p>
+			</div>
+		</div>
+		<a href="#manning42">
+			<img src="img/manning42.jpg">
+		</a>
+		<div id="manning42">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<img src="img/manning42.jpg">
+				<p>Superbowl 42 MVP Eli Manning</p>
+			</div>
+		</div>
+		<a href="#manning46">
+			<img src="img/manning46.jpg">
+		</a>
+		<div id="manning46">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<img src="img/manning46.jpg">
+				<p>Superbowl 46 MVP Eli Manning</p>
+			</div>
+		</div>
+	</section>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>	
+<script type="text/javascript" src="js/script.js"></script>	
+</body>
+</html>

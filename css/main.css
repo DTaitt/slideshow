@@ -1,0 +1,152 @@
+header {
+	background: rgb(25,47,107);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header h1 {
+	color: white;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 5em;
+}
+
+#hero {
+	background: rgb(162,170,173);
+	padding: 20px;
+}
+
+#hero img {
+	width: 500px;
+	height: 500px;
+}
+
+#hero .slideshow {
+	display: flex;
+	align-items: center;
+}
+
+#hero .slideshow a {
+	font-size: 5em;
+	padding: 200px 0;
+}
+
+#hero .slideshow a:hover {
+	text-decoration: none;
+}
+
+#hero div.slideshow {
+	margin: auto;
+	width: 595px;
+}
+
+#hero div.slideshow a.back {
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+#hero div.slideshow a.forward {
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+#hero div.slideshow a {
+	transition: 2s;
+}
+
+#hero div.slideshow a:hover {
+	background: rgba(255,255,255,.5);
+	transition: 2s;
+}
+
+#hero div.slideshow h2 {
+	padding: 10px;
+	font-family: 'Arsenal', sans-serif;
+}
+
+#gallery {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+#gallery img {
+	width: 300px;
+	height: 300px;
+}
+
+/*Modal*/
+
+#simms, #anderson, #manning42, #manning46 {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	transition: opacity .5s ease-in;
+	pointer-events: none;
+}
+
+#simms:target, #anderson:target, #manning42:target, #manning46:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+#simms div, #anderson div,#manning42 div, #manning46 div  {
+	width: 750px;
+	position: relative;
+	margin: 50px auto;
+	padding: 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.close {
+	background: red;
+	color: white;
+	line-height: 25px;
+	position: absolute;
+	right: -10px;
+	text-align: center;
+	top: -10px;
+	width: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+	opacity: 1;
+}
+
+.close:hover { 
+	color: black; 
+	opacity: 1;
+	transform: none;
+}
+
+#gallery {
+	background: rgb(202,0,26)
+}
+
+#gallery div div {
+	height: 450px;
+}
+
+#gallery div div img {
+	float: left;
+	padding-right: 10px;
+	width: 400px;
+	height: 400px;
+}
+
+#gallery div div p {
+	line-height: 1.5em;
+	font-style: italic;
+	font-size: 1.5em;
+}
